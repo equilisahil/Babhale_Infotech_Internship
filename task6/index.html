@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .table-row{
+            background-color: rgb(173, 173, 173);
+            height: 30px;
+            width: 60px;
+        }
+        tr {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 16px;
+        }
+         td {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 16px;
+        }
+        table{
+            margin:auto;
+            border: 1px solid black;
+        }
+        h1{
+            text-align: center;
+        }
+        input[type="submit"],[type="reset"]{
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .info{
+            font-weight: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <table>
+        <tr class="table-row">
+            <td class="info">Enter your first name</td>
+            <td>
+                <form>
+                    <input type="text" name="fname" placeholder="Enter your first name">
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Enter your last name</td>
+            <td>
+                <form>
+                    <input type="text" name="lname" placeholder="Enter your last name">
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Enter your Password</td>
+            <td>
+                <form>
+                    <input type="password" name="password" id="pwd" placeholder="***********" required>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">ReEnter your Password</td>
+            <td>
+                <form>
+                    <input type="password" name="password" id="pwd" placeholder="***********" required>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Enter your Email</td>
+            <td>
+                <form>
+                    <input type="email" name="email" placeholder="abc@gamil.com" required>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Enter your Mobile No.</td>
+            <td>
+                <form>
+                    <input type="tel" name="phone" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Enter your Address</td>
+            <td>
+                <form>
+                <textarea id="address" name="address" rows="6" cols="25 ">
+                </textarea>
+                </form>
+            </td>
+        </tr>
+
+        <tr class="table-row">
+            <td class="info">Select your Gender</td>
+            <td>
+                <form>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label>Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label>Female</label>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Select your hobbies</td>
+            <td>
+                <form>
+                    <input type="checkbox" name="hobbie1" value="Reading">
+                    <label for="hobbie1">Reading</label>
+                    <input type="checkbox" name="hobbie1" value="Reading">
+                    <label for="hobbie1">Swimming</label>
+                    <input type="checkbox" name="hobbie1" value="Reading">
+                    <label for="hobbie1">Traveling</label>
+                    <input type="checkbox" name="hobbie1" value="Reading">
+                    <label for="hobbie1">Playing Football</label>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Select your DOB</td>
+            <td>
+                <form>
+                    <input type="date" name="birthday" id="birthday">
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Select your country</td>
+            <td>
+                <form>
+                    <select name="country" id="country">
+                            <option value="" disabled selected>Select your country</option>
+                                 <option value="US">United States</option>
+                                 <option value="CA">Canada</option>
+                                 <option value="GB">United Kingdom</option>
+                                 <option value="DE">Germany</option>
+                                 <option value="AU">Australia</option>
+                                 <option value="IN">India</option>
+                                 <option value="FR">France</option>
+                                 <option value="BR">Brazil</option>
+                                 <option value="JP">Japan</option>
+                                 <option value="ZA">South Africa</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td class="info">Upload your picture</td>
+            <td>
+                <form>
+                    <input type="file" name="file" >
+                </form>
+            </td>
+        </tr>
+        <tr class="table-row">
+            <td colspan="2">
+                <form style="text-align: center;">
+                    <input type="submit" name="savemydata" id="savemydata" value="Save My Data">
+                    <input type="reset" value="Reset Data">
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
