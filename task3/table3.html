@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableAssignmennt</title>
+    <style>
+        table{
+            border: 1px double grey;
+        }
+        td,th{
+            border: 1px outset grey;
+        }
+        .heading{
+            background-color: rgb(67, 201, 201);
+        }
+        .insideHeading{
+            background-color: rgb(223, 213, 83);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="heading">Device </th>
+            <th class="heading">Brand</th>
+            <th colspan="2" class="heading">Specifications</th>
+        </tr>
+        <tr>
+            <td >Smartphone</td>
+            <td >Apple</td>
+            <td>
+                <table>
+                    <tr>
+                        <th class="insideHeading">Model</th>
+                        <th class="insideHeading">Storage</th>
+                    </tr>
+                    <tr>
+                        <td>iPhone 12 Pro</td>
+                        <td>256GB</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone SE</td>
+                        <td>128GB</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>HP</td>
+            <td colspan="2">15.6" Display</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>Samsung</td>
+            <td colspan="2">10.5" Display</td>
+        </tr>
+    </table>
+</body>
+</html>

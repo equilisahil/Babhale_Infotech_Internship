@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableAssignmennt</title>
+    <style>
+        table {
+            border: 8px outset grey;
+            border-spacing: 0;
+            margin: auto;
+            width: 100%;
+        }
+        th,td{
+            border: 1px solid rgb(130, 127, 127);
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        .time{
+            text-align: right;
+        }
+        .skin{
+            background-color: rgb(233, 207, 162);
+            padding: 20px;
+        }
+        .green{
+            background-color: rgb(70, 207, 70);
+            padding: 20px;
+        }
+        .pink{
+            background-color: rgb(235, 125, 196);
+            padding: 20px;
+        }
+        .grey{
+            background-color: rgb(165, 162, 162);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <th class="time">1:00</th>
+            <td rowspan="2" class="skin">Office</td>
+            <td></td>
+            <td rowspan="2" class="skin">Office</td>
+            <td rowspan="8" class="skin">Office Hours by Appt</td>
+            <td rowspan="2" class="skin">Office</td>
+        </tr>
+        <tr>
+            <th class="time">1:30</th>
+            <td rowspan="2" class="grey">Dept Meeting</td>
+        </tr>
+        <tr>
+            <th class="time">2:00</th>
+            <td rowspan="3" class="green">MAT 108</td>
+            <td rowspan="3" class="green">MAT 108</td>
+            <td rowspan="3" class="green">MAT 108</td>
+        </tr>
+        <tr>
+            <th class="time">2:30</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time">3:00</th>
+            <td rowspan="3" class="grey">EC Meeting</td>
+        </tr>
+        <tr>
+            <th class="time">3:30</th>
+            <td rowspan="3" class="pink">CSC 205</td>
+            <td rowspan="3" class="pink">CSC 205</td>
+            <td rowspan="3" class="pink">CSC 205</td>
+        </tr>
+        <tr>
+            <th class="time">4:00</th>
+        </tr>
+        <tr>
+            <th class="time">4:30</th>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
